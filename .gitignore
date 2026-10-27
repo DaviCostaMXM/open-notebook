@@ -158,3 +158,12 @@ history.txt
 # oss-maintainer local state
 .maintainer/profile.local.toml
 .maintainer/state/
+
+# Toolchain portátil do Node — não deve ir pro repositório
+tools/
+
+# Binário duplicado que entrou por engano
+surreal.exe.exe
+
+# Dados do SurrealDB (a pasta real usa underscore, não hífen)
+surreal_data/
