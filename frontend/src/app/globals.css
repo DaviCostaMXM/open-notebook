@@ -151,13 +151,13 @@
   --sage-deep: #47603f;
   --sage-tint: #e5ebdc;
 
-  --gold: #F4563B;
-  --gold-deep: #c23e28;
-  --gold-tint: #fbe1db;
+  --gold: #a97b12;
+  --gold-deep: #7c5a05;
+  --gold-tint: #f3ead3;
 
-  --teal: #092947;
-  --teal-deep: #061c30;
-  --teal-tint: #E2E9ED;
+  --teal: #0e7268;
+  --teal-deep: #095a51;
+  --teal-tint: #ddece8;
 
   --plum: #5d4991;
   --plum-tint: #eae6f3;
@@ -210,9 +210,9 @@
   --warn-tint: var(--clay-tint);
 
   /* teal evidence washes — the one sanctioned tinted text bg */
-  --excerpt-wash: #e7edf2;
-  --best-match: rgba(9, 41, 71, 0.16);
-  --best-match-ring: rgba(9, 41, 71, 0.16);
+  --excerpt-wash: #ecf3f0;
+  --best-match: rgba(14, 114, 104, 0.16);
+  --best-match-ring: rgba(14, 114, 104, 0.16);
 
   /* depth */
   --shadow-soft: 0 1px 2px rgba(35, 37, 42, 0.06);
@@ -313,12 +313,12 @@
   --sage: #93b084;
   --sage-deep: #a8c299;
   --sage-tint: #232b1d;
-  --gold: #ff7a5c;
-  --gold-deep: #ff967d;
-  --gold-tint: #3a211b;
-  --teal: #3f6e99;
-  --teal-deep: #5c8ab3;
-  --teal-tint: #15212c;
+  --gold: #cfa13e;
+  --gold-deep: #ddb55f;
+  --gold-tint: #322b1b;
+  --teal: #3fb3a5;
+  --teal-deep: #64c5b9;
+  --teal-tint: #16302c;
   --plum: #a290d3;
   --plum-tint: #29253a;
   --mauve: #c892ba;
@@ -360,9 +360,9 @@
   --danger-tint: #37231d;
 
   /* evidence washes */
-  --excerpt-wash: #17222c;
-  --best-match: rgba(63, 110, 153, 0.2);
-  --best-match-ring: rgba(63, 110, 153, 0.2);
+  --excerpt-wash: #1c2a28;
+  --best-match: rgba(63, 179, 165, 0.2);
+  --best-match-ring: rgba(63, 179, 165, 0.2);
 
   /* depth */
   --shadow-soft: 0 1px 2px rgba(0, 0, 0, 0.35);

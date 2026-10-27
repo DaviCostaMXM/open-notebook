@@ -1,0 +1,208 @@
+From a5cc0e498ce34c4fce57a9f4b0c3f0323fc8ea07 Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Tue, 27 Oct 2026 10:47:55 -0300
+Subject: [PATCH] =?UTF-8?q?fix(branding):=20corrige=20pontos=20do=20review?=
+ =?UTF-8?q?=20autom=C3=A1tico=20(cubic)?=
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+- Reverte --gold e --teal para os tons originais (não-vermelhos), restaurando
+  a regra 'red-free' do sistema de design e a distinção semântica entre
+  fern (ação) e teal (voz de IA), que tinham ficado iguais ao azul da MXM
+- Marca da MXM (as 3 bolinhas do menu lateral) agora usa cores fixas da marca
+  (azul/laranja/azul escuro) direto, em vez de sobrescrever os tokens
+  compartilhados fern/gold/teal usados no resto da interface
+- Adiciona peso 700 da Spline Sans Mono (faltava para os contadores em negrito)
+- Atualiza o rótulo da fonte na página /dev/design (Bricolage Grotesque -> Poppins)
+- Metadata da página volta para inglês (evita forçar português em usuários de
+  outros idiomas; app name 'MXM Notebook' continua fixo em todo idioma)
+- Corrige frase com mistura de idiomas no README
+- Corrige appName/loginTitle do locale bn-IN para 'MXM Notebook' (estava em
+  bengali, inconsistente com os outros 13 idiomas)
+
+Co-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01DUtQo2JfQRbd1GGu6MEc6z
+---
+ README.md                                     |  2 +-
+ frontend/src/app/dev/design/page.tsx          |  2 +-
+ frontend/src/app/globals.css                  | 36 +++++++++----------
+ frontend/src/app/layout.tsx                   | 10 +++++-
+ frontend/src/components/layout/AppSidebar.tsx | 10 ++++--
+ frontend/src/lib/locales/bn-IN/index.ts       |  4 +--
+ 6 files changed, 38 insertions(+), 26 deletions(-)
+
+diff --git a/README.md b/README.md
+index 82628a7..04ae8f2 100644
+--- a/README.md
++++ b/README.md
+@@ -20,7 +20,7 @@
+   <p align="center">
+     Fork interno da MXM Sistemas do projeto open source <a href="https://github.com/lfnovo/open-notebook">Open Notebook</a> — uma alternativa de código aberto e focada em privacidade ao Google Notebook LM, com identidade visual adaptada ao Brandbook da MXM.
+     <br />Todo o crédito do projeto original é do <a href="https://github.com/lfnovo">autor e comunidade do Open Notebook</a>; este fork mantém a licença MIT original.
+-    <br /><strong>Projeto original: Join their <a href="https://discord.gg/37XJPXfz2w">Discord server</a> for help, to share workflow ideas, and suggest features!</strong>
++    <br /><strong>Projeto original: junte-se ao <a href="https://discord.gg/37XJPXfz2w">Discord server</a> deles para tirar dúvidas, compartilhar ideias de workflow e sugerir features!</strong>
+     <br />
+     <a href="https://www.open-notebook.ai"><strong>Site do projeto original »</strong></a>
+     <br />
+diff --git a/frontend/src/app/dev/design/page.tsx b/frontend/src/app/dev/design/page.tsx
+index 2fba5b4..6b46236 100644
+--- a/frontend/src/app/dev/design/page.tsx
++++ b/frontend/src/app/dev/design/page.tsx
+@@ -206,7 +206,7 @@ function Sheet() {
+       <SectionTitle>Typography</SectionTitle>
+       <div className="space-y-3">
+         <div className="font-display text-2xl font-bold">
+-          Display — Bricolage Grotesque 700
++          Display — Poppins 700 (MXM)
+         </div>
+         <div className="text-sm">
+           Body — Instrument Sans. Reading text stays on neutral surfaces;
+diff --git a/frontend/src/app/globals.css b/frontend/src/app/globals.css
+index 5baee10..4f0813b 100644
+--- a/frontend/src/app/globals.css
++++ b/frontend/src/app/globals.css
+@@ -151,13 +151,13 @@
+   --sage-deep: #47603f;
+   --sage-tint: #e5ebdc;
+ 
+-  --gold: #F4563B;
+-  --gold-deep: #c23e28;
+-  --gold-tint: #fbe1db;
++  --gold: #a97b12;
++  --gold-deep: #7c5a05;
++  --gold-tint: #f3ead3;
+ 
+-  --teal: #092947;
+-  --teal-deep: #061c30;
+-  --teal-tint: #E2E9ED;
++  --teal: #0e7268;
++  --teal-deep: #095a51;
++  --teal-tint: #ddece8;
+ 
+   --plum: #5d4991;
+   --plum-tint: #eae6f3;
+@@ -210,9 +210,9 @@
+   --warn-tint: var(--clay-tint);
+ 
+   /* teal evidence washes — the one sanctioned tinted text bg */
+-  --excerpt-wash: #e7edf2;
+-  --best-match: rgba(9, 41, 71, 0.16);
+-  --best-match-ring: rgba(9, 41, 71, 0.16);
++  --excerpt-wash: #ecf3f0;
++  --best-match: rgba(14, 114, 104, 0.16);
++  --best-match-ring: rgba(14, 114, 104, 0.16);
+ 
+   /* depth */
+   --shadow-soft: 0 1px 2px rgba(35, 37, 42, 0.06);
+@@ -313,12 +313,12 @@
+   --sage: #93b084;
+   --sage-deep: #a8c299;
+   --sage-tint: #232b1d;
+-  --gold: #ff7a5c;
+-  --gold-deep: #ff967d;
+-  --gold-tint: #3a211b;
+-  --teal: #3f6e99;
+-  --teal-deep: #5c8ab3;
+-  --teal-tint: #15212c;
++  --gold: #cfa13e;
++  --gold-deep: #ddb55f;
++  --gold-tint: #322b1b;
++  --teal: #3fb3a5;
++  --teal-deep: #64c5b9;
++  --teal-tint: #16302c;
+   --plum: #a290d3;
+   --plum-tint: #29253a;
+   --mauve: #c892ba;
+@@ -360,9 +360,9 @@
+   --danger-tint: #37231d;
+ 
+   /* evidence washes */
+-  --excerpt-wash: #17222c;
+-  --best-match: rgba(63, 110, 153, 0.2);
+-  --best-match-ring: rgba(63, 110, 153, 0.2);
++  --excerpt-wash: #1c2a28;
++  --best-match: rgba(63, 179, 165, 0.2);
++  --best-match-ring: rgba(63, 179, 165, 0.2);
+ 
+   /* depth */
+   --shadow-soft: 0 1px 2px rgba(0, 0, 0, 0.35);
+diff --git a/frontend/src/app/layout.tsx b/frontend/src/app/layout.tsx
+index 3dd5d3d..3b21c35 100644
+--- a/frontend/src/app/layout.tsx
++++ b/frontend/src/app/layout.tsx
+@@ -14,6 +14,7 @@ import "@fontsource/poppins/600.css";
+ import "@fontsource/poppins/700.css";
+ import "@fontsource/spline-sans-mono/400.css";
+ import "@fontsource/spline-sans-mono/500.css";
++import "@fontsource/spline-sans-mono/700.css";
+ import { Toaster } from "@/components/ui/sonner";
+ import { QueryProvider } from "@/components/providers/QueryProvider";
+ import { ThemeProvider } from "@/components/providers/ThemeProvider";
+@@ -22,9 +23,16 @@ import { ConnectionGuard } from "@/components/common/ConnectionGuard";
+ import { themeScript } from "@/lib/theme-script";
+ import { I18nProvider } from "@/components/providers/I18nProvider";
+ 
++// Nota: metadata estática (não varia por idioma). O app name "MXM Notebook"
++// fica igual em qualquer locale (nome próprio, como a maioria dos produtos
++// faz). A descrição fica em inglês — mesmo padrão do projeto original —
++// para não forçar português em buscas/previews de usuários de outros
++// idiomas; localizar por idioma exigiria metadata dinâmica (generateMetadata)
++// lendo o locale no servidor, o que esse projeto não suporta hoje (o i18n
++// roda só no cliente, sem SSR).
+ export const metadata: Metadata = {
+   title: "MXM Notebook",
+-  description: "Assistente de pesquisa e conhecimento com IA — MXM Sistemas",
++  description: "AI-powered research and knowledge assistant — MXM Sistemas",
+ };
+ 
+ export default function RootLayout({
+diff --git a/frontend/src/components/layout/AppSidebar.tsx b/frontend/src/components/layout/AppSidebar.tsx
+index 8094595..e99b5e6 100644
+--- a/frontend/src/components/layout/AppSidebar.tsx
++++ b/frontend/src/components/layout/AppSidebar.tsx
+@@ -74,12 +74,16 @@ const getNavigation = (t: TFunction) => [
+ ] as const
+ 
+ // The tri-hue mark recomposed in the owned palette: fern / gold / teal.
++// Marca MXM: cores fixas do Brandbook (não acompanham o tema claro/escuro,
++// como é comum em marcas — mantém o sistema de tokens semânticos do resto
++// da aplicação intacto, sem forçar o laranja da marca nos tokens
++// fern/gold/teal compartilhados).
+ function LogoPebbles({ className }: { className?: string }) {
+   return (
+     <span className={cn('flex items-center gap-[3px]', className)} aria-hidden="true">
+-      <span className="size-[9px] rounded-[3px] bg-fern" />
+-      <span className="size-[9px] rounded-[3px] bg-gold" />
+-      <span className="size-[9px] rounded-[3px] bg-teal" />
++      <span className="size-[9px] rounded-[3px]" style={{ backgroundColor: '#234B74' }} />
++      <span className="size-[9px] rounded-[3px]" style={{ backgroundColor: '#F4563B' }} />
++      <span className="size-[9px] rounded-[3px]" style={{ backgroundColor: '#092947' }} />
+     </span>
+   )
+ }
+diff --git a/frontend/src/lib/locales/bn-IN/index.ts b/frontend/src/lib/locales/bn-IN/index.ts
+index 3b6c0d3..f71aa7c 100644
+--- a/frontend/src/lib/locales/bn-IN/index.ts
++++ b/frontend/src/lib/locales/bn-IN/index.ts
+@@ -27,7 +27,7 @@ export const bnIN = {
+     podcast: "পডকাস্ট",
+     quickActions: "দ্রুত ক্রিয়া",
+     quickActionsDesc: "নেভিগেশন, অনুসন্ধান, প্রশ্ন, থিম",
+-    appName: "ওপেন নোটবুক",
++    appName: "MXM Notebook",
+     add: "যোগ করুন",
+     remove: "সরান",
+     confirm: "নিশ্চিত করুন",
+@@ -191,7 +191,7 @@ export const bnIN = {
+     localDevLabel: "স্থানীয় ডেভেলপমেন্টের জন্য",
+   },
+   auth: {
+-    loginTitle: "ওপেন নোটবুক",
++    loginTitle: "MXM Notebook",
+     loginDesc: "অ্যাপ্লিকেশন অ্যাক্সেস করতে আপনার পাসওয়ার্ড লিখুন",
+     passwordPlaceholder: "পাসওয়ার্ড",
+     signingIn: "সাইন ইন করা হচ্ছে...",
+-- 
+2.43.0
+

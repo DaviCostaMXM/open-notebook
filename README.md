@@ -20,7 +20,7 @@
   <p align="center">
     Fork interno da MXM Sistemas do projeto open source <a href="https://github.com/lfnovo/open-notebook">Open Notebook</a> — uma alternativa de código aberto e focada em privacidade ao Google Notebook LM, com identidade visual adaptada ao Brandbook da MXM.
     <br />Todo o crédito do projeto original é do <a href="https://github.com/lfnovo">autor e comunidade do Open Notebook</a>; este fork mantém a licença MIT original.
-    <br /><strong>Projeto original: Join their <a href="https://discord.gg/37XJPXfz2w">Discord server</a> for help, to share workflow ideas, and suggest features!</strong>
+    <br /><strong>Projeto original: junte-se ao <a href="https://discord.gg/37XJPXfz2w">Discord server</a> deles para tirar dúvidas, compartilhar ideias de workflow e sugerir features!</strong>
     <br />
     <a href="https://www.open-notebook.ai"><strong>Site do projeto original »</strong></a>
     <br />

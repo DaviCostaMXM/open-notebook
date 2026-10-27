@@ -14,6 +14,7 @@ import "@fontsource/poppins/600.css";
 import "@fontsource/poppins/700.css";
 import "@fontsource/spline-sans-mono/400.css";
 import "@fontsource/spline-sans-mono/500.css";
+import "@fontsource/spline-sans-mono/700.css";
 import { Toaster } from "@/components/ui/sonner";
 import { QueryProvider } from "@/components/providers/QueryProvider";
 import { ThemeProvider } from "@/components/providers/ThemeProvider";
@@ -22,9 +23,16 @@ import { ConnectionGuard } from "@/components/common/ConnectionGuard";
 import { themeScript } from "@/lib/theme-script";
 import { I18nProvider } from "@/components/providers/I18nProvider";
 
+// Nota: metadata estática (não varia por idioma). O app name "MXM Notebook"
+// fica igual em qualquer locale (nome próprio, como a maioria dos produtos
+// faz). A descrição fica em inglês — mesmo padrão do projeto original —
+// para não forçar português em buscas/previews de usuários de outros
+// idiomas; localizar por idioma exigiria metadata dinâmica (generateMetadata)
+// lendo o locale no servidor, o que esse projeto não suporta hoje (o i18n
+// roda só no cliente, sem SSR).
 export const metadata: Metadata = {
   title: "MXM Notebook",
-  description: "Assistente de pesquisa e conhecimento com IA — MXM Sistemas",
+  description: "AI-powered research and knowledge assistant — MXM Sistemas",
 };
 
 export default function RootLayout({
