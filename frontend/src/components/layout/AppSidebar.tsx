@@ -74,12 +74,16 @@ const getNavigation = (t: TFunction) => [
 ] as const
 
 // The tri-hue mark recomposed in the owned palette: fern / gold / teal.
+// Marca MXM: cores fixas do Brandbook (não acompanham o tema claro/escuro,
+// como é comum em marcas — mantém o sistema de tokens semânticos do resto
+// da aplicação intacto, sem forçar o laranja da marca nos tokens
+// fern/gold/teal compartilhados).
 function LogoPebbles({ className }: { className?: string }) {
   return (
     <span className={cn('flex items-center gap-[3px]', className)} aria-hidden="true">
-      <span className="size-[9px] rounded-[3px] bg-fern" />
-      <span className="size-[9px] rounded-[3px] bg-gold" />
-      <span className="size-[9px] rounded-[3px] bg-teal" />
+      <span className="size-[9px] rounded-[3px]" style={{ backgroundColor: '#234B74' }} />
+      <span className="size-[9px] rounded-[3px]" style={{ backgroundColor: '#F4563B' }} />
+      <span className="size-[9px] rounded-[3px]" style={{ backgroundColor: '#092947' }} />
     </span>
   )
 }

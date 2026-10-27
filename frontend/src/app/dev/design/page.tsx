@@ -206,7 +206,7 @@ function Sheet() {
       <SectionTitle>Typography</SectionTitle>
       <div className="space-y-3">
         <div className="font-display text-2xl font-bold">
-          Display — Bricolage Grotesque 700
+          Display — Poppins 700 (MXM)
         </div>
         <div className="text-sm">
           Body — Instrument Sans. Reading text stays on neutral surfaces;
