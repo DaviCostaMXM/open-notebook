@@ -141,6 +141,12 @@ export function LoginForm() {
     <div className="min-h-screen flex items-center justify-center bg-background p-4">
       <Card className="w-full max-w-md">
         <CardHeader className="text-center">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/mxm-logo.png"
+            alt="MXM Sistemas"
+            className="mx-auto mb-2 size-14 rounded-full"
+          />
           <CardTitle>{t('auth.loginTitle')}</CardTitle>
           <CardDescription>
             {t('auth.loginDesc')}

@@ -21,9 +21,9 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-instrument-sans), "Helvetica Neue", Arial, sans-serif;
+  --font-sans: var(--font-poppins), "Avenir Next", "Trebuchet MS", sans-serif;
   --font-mono: var(--font-spline-mono), ui-monospace, "SF Mono", Menlo, monospace;
-  --font-display: var(--font-bricolage), "Avenir Next", "Trebuchet MS", sans-serif;
+  --font-display: var(--font-poppins), "Avenir Next", "Trebuchet MS", sans-serif;
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -135,9 +135,10 @@
 :root {
   /* --------------------------------------------------------------
      fontes — auto-hospedadas via @fontsource (ver src/app/layout.tsx)
+     Poppins é a única família tipográfica da marca MXM (Brandbook 3.0):
+     usada tanto em títulos quanto em texto corrido — não só nos headings.
      -------------------------------------------------------------- */
-  --font-instrument-sans: "Instrument Sans", "Helvetica Neue", Arial, sans-serif;
-  --font-bricolage: "Poppins", "Avenir Next", "Trebuchet MS", sans-serif;
+  --font-poppins: "Poppins", "Avenir Next", "Trebuchet MS", sans-serif;
   --font-spline-mono: "Spline Sans Mono", ui-monospace, "SF Mono", Menlo, monospace;
 
   /* --------------------------------------------------------------

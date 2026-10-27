@@ -73,18 +73,17 @@ const getNavigation = (t: TFunction) => [
   },
 ] as const
 
-// The tri-hue mark recomposed in the owned palette: fern / gold / teal.
-// Marca MXM: cores fixas do Brandbook (não acompanham o tema claro/escuro,
-// como é comum em marcas — mantém o sistema de tokens semânticos do resto
-// da aplicação intacto, sem forçar o laranja da marca nos tokens
-// fern/gold/teal compartilhados).
-function LogoPebbles({ className }: { className?: string }) {
+// Marca oficial MXM Sistemas (selo circular do Brandbook 3.0). Arquivo
+// próprio em public/mxm-logo.png — cores fixas, não acompanham o tema
+// claro/escuro, como é comum em marcas.
+function MxmLogo({ className }: { className?: string }) {
   return (
-    <span className={cn('flex items-center gap-[3px]', className)} aria-hidden="true">
-      <span className="size-[9px] rounded-[3px]" style={{ backgroundColor: '#234B74' }} />
-      <span className="size-[9px] rounded-[3px]" style={{ backgroundColor: '#F4563B' }} />
-      <span className="size-[9px] rounded-[3px]" style={{ backgroundColor: '#092947' }} />
-    </span>
+    // eslint-disable-next-line @next/next/no-img-element
+    <img
+      src="/mxm-logo.png"
+      alt="MXM Sistemas"
+      className={cn('size-6 shrink-0 rounded-full', className)}
+    />
   )
 }
 
@@ -143,7 +142,7 @@ export function AppSidebar() {
         >
           {isCollapsed ? (
             <div className="relative flex items-center justify-center w-full">
-              <LogoPebbles className="flex-col gap-[3px] transition-opacity group-hover:opacity-0" />
+              <MxmLogo className="size-8 transition-opacity group-hover:opacity-0" />
               <Button
                 variant="ghost"
                 size="sm"
@@ -156,7 +155,7 @@ export function AppSidebar() {
           ) : (
             <>
               <div className="flex items-center gap-2.5">
-                <LogoPebbles />
+                <MxmLogo />
                 <span className="font-display text-[15px] font-bold tracking-tight text-sidebar-foreground">
                   {t('common.appName')}
                 </span>

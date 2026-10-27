@@ -5,11 +5,11 @@ import "katex/dist/katex.min.css";
 // evita depender de fonts.googleapis.com em tempo de build (ambientes sem
 // acesso à internet / atrás de proxy restrito). Nomes de família ficam
 // mapeados para as variáveis --font-* em globals.css.
-import "@fontsource/instrument-sans/400.css";
-import "@fontsource/instrument-sans/500.css";
-import "@fontsource/instrument-sans/600.css";
-import "@fontsource/instrument-sans/700.css";
-// Fonte oficial da MXM (Brandbook 3.0): Poppins
+// Fonte oficial da MXM (Brandbook 3.0): Poppins — única família tipográfica
+// da marca, usada em títulos E em texto corrido (ver globals.css --font-sans).
+import "@fontsource/poppins/300.css";
+import "@fontsource/poppins/400.css";
+import "@fontsource/poppins/500.css";
 import "@fontsource/poppins/600.css";
 import "@fontsource/poppins/700.css";
 import "@fontsource/spline-sans-mono/400.css";

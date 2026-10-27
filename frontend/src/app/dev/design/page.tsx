@@ -209,7 +209,7 @@ function Sheet() {
           Display — Poppins 700 (MXM)
         </div>
         <div className="text-sm">
-          Body — Instrument Sans. Reading text stays on neutral surfaces;
+          Body — Poppins (MXM). Reading text stays on neutral surfaces;
           color is information, never decoration.
         </div>
         <div className="font-mono text-xs">
