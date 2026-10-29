@@ -30,7 +30,7 @@ export const deDE = {
     podcast: "Podcast",
     quickActions: "Schnellaktionen",
     quickActionsDesc: "Navigation, Suche, Fragen, Design",
-    appName: "MXM Notebook",
+    appName: "MXM Cognos",
     add: "Hinzufügen",
     remove: "Entfernen",
     confirm: "Bestätigen",
@@ -194,7 +194,7 @@ export const deDE = {
     localDevLabel: "Für lokale Entwicklung",
   },
   auth: {
-    loginTitle: "MXM Notebook",
+    loginTitle: "MXM Cognos",
     loginDesc: "Gib dein Passwort ein, um auf die Anwendung zuzugreifen",
     passwordPlaceholder: "Passwort",
     signingIn: "Anmelden...",

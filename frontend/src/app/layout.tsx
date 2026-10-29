@@ -23,7 +23,7 @@ import { ConnectionGuard } from "@/components/common/ConnectionGuard";
 import { themeScript } from "@/lib/theme-script";
 import { I18nProvider } from "@/components/providers/I18nProvider";
 
-// Nota: metadata estática (não varia por idioma). O app name "MXM Notebook"
+// Nota: metadata estática (não varia por idioma). O app name "MXM Cognos"
 // fica igual em qualquer locale (nome próprio, como a maioria dos produtos
 // faz). A descrição fica em inglês — mesmo padrão do projeto original —
 // para não forçar português em buscas/previews de usuários de outros
@@ -31,7 +31,7 @@ import { I18nProvider } from "@/components/providers/I18nProvider";
 // lendo o locale no servidor, o que esse projeto não suporta hoje (o i18n
 // roda só no cliente, sem SSR).
 export const metadata: Metadata = {
-  title: "MXM Notebook",
+  title: "MXM Cognos",
   description: "AI-powered research and knowledge assistant — MXM Sistemas",
 };
 

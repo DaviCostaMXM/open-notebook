@@ -27,7 +27,7 @@ export const plPL = {
     podcast: "Podcast",
     quickActions: "Szybkie akcje",
     quickActionsDesc: "Nawigacja, wyszukiwanie, pytania, motyw",
-    appName: "MXM Notebook",
+    appName: "MXM Cognos",
     add: "Dodaj",
     remove: "Usuń",
     confirm: "Potwierdź",
@@ -191,7 +191,7 @@ export const plPL = {
     localDevLabel: "Dla środowiska lokalnego",
   },
   auth: {
-    loginTitle: "MXM Notebook",
+    loginTitle: "MXM Cognos",
     loginDesc: "Wpisz hasło, aby uzyskać dostęp do aplikacji",
     passwordPlaceholder: "Hasło",
     signingIn: "Logowanie...",

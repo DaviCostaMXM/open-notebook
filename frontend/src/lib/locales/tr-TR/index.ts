@@ -27,7 +27,7 @@ export const trTR = {
     podcast: "Podcast",
     quickActions: "Hızlı eylemler",
     quickActionsDesc: "Gezinme, arama, sor, tema",
-    appName: "MXM Notebook",
+    appName: "MXM Cognos",
     add: "Ekle",
     remove: "Kaldır",
     confirm: "Onayla",
@@ -191,7 +191,7 @@ export const trTR = {
     localDevLabel: "Yerel geliştirme için",
   },
   auth: {
-    loginTitle: "MXM Notebook",
+    loginTitle: "MXM Cognos",
     loginDesc: "Uygulamaya erişmek için şifrenizi girin",
     passwordPlaceholder: "Şifre",
     signingIn: "Giriş yapılıyor...",

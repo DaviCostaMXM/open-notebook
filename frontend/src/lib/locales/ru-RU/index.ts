@@ -27,7 +27,7 @@ export const ruRU = {
     podcast: "Подкаст",
     quickActions: "Быстрые действия",
     quickActionsDesc: "Навигация, поиск, запрос, тема",
-    appName: "MXM Notebook",
+    appName: "MXM Cognos",
     add: "Добавить",
     remove: "Удалить",
     confirm: "Подтвердить",
@@ -191,7 +191,7 @@ export const ruRU = {
     localDevLabel: "Для локальной разработки",
   },
   auth: {
-    loginTitle: "MXM Notebook",
+    loginTitle: "MXM Cognos",
     loginDesc: "Введите пароль для доступа к приложению",
     passwordPlaceholder: "Пароль",
     signingIn: "Вход...",

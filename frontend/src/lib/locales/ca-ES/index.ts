@@ -27,7 +27,7 @@ export const caES = {
     podcast: "Podcast",
     quickActions: "Accions ràpides",
     quickActionsDesc: "Navegació, cerca, preguntes, tema",
-    appName: "MXM Notebook",
+    appName: "MXM Cognos",
     add: "Afegeix",
     remove: "Elimina",
     confirm: "Confirma",
@@ -191,7 +191,7 @@ export const caES = {
     localDevLabel: "Per al desenvolupament local",
   },
   auth: {
-    loginTitle: "MXM Notebook",
+    loginTitle: "MXM Cognos",
     loginDesc: "Introdueix la teva contrasenya per accedir a l'aplicació",
     passwordPlaceholder: "Contrasenya",
     signingIn: "S'està iniciant la sessió...",

@@ -27,7 +27,7 @@ export const bnIN = {
     podcast: "পডকাস্ট",
     quickActions: "দ্রুত ক্রিয়া",
     quickActionsDesc: "নেভিগেশন, অনুসন্ধান, প্রশ্ন, থিম",
-    appName: "MXM Notebook",
+    appName: "MXM Cognos",
     add: "যোগ করুন",
     remove: "সরান",
     confirm: "নিশ্চিত করুন",
@@ -191,7 +191,7 @@ export const bnIN = {
     localDevLabel: "স্থানীয় ডেভেলপমেন্টের জন্য",
   },
   auth: {
-    loginTitle: "MXM Notebook",
+    loginTitle: "MXM Cognos",
     loginDesc: "অ্যাপ্লিকেশন অ্যাক্সেস করতে আপনার পাসওয়ার্ড লিখুন",
     passwordPlaceholder: "পাসওয়ার্ড",
     signingIn: "সাইন ইন করা হচ্ছে...",

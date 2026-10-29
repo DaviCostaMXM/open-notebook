@@ -15,7 +15,7 @@
     <img src="docs/assets/hero.svg" alt="Logo">
   </a>
 
-  <h3 align="center">MXM Notebook</h3>
+  <h3 align="center">MXM Cognos</h3>
 
   <p align="center">
     Fork interno da MXM Sistemas do projeto open source <a href="https://github.com/lfnovo/open-notebook">Open Notebook</a> — uma alternativa de código aberto e focada em privacidade ao Google Notebook LM, com identidade visual adaptada ao Brandbook da MXM.
@@ -148,7 +148,7 @@ Done! Create a notebook, add a source and start chatting. Full walkthrough: [Con
 
 ### Instalação interna MXM — sem Docker, direto na sua máquina
 
-Pra testar ou usar o MXM Notebook no dia a dia sem precisar instalar o Docker Desktop nem abrir chamado com o TI, dá pra rodar os quatro serviços (banco de dados, API, worker e frontend) direto no Windows. Foi assim que este fork foi validado.
+Pra testar ou usar o MXM Cognos no dia a dia sem precisar instalar o Docker Desktop nem abrir chamado com o TI, dá pra rodar os quatro serviços (banco de dados, API, worker e frontend) direto no Windows. Foi assim que este fork foi validado.
 
 Siga o guia completo em **[Instalação nativa no Windows, sem Docker](docs/1-INSTALLATION/windows-native.md)**. Resumindo:
 

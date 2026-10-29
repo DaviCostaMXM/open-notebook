@@ -27,7 +27,7 @@ export const zhTW = {
     podcast: "播客",
     quickActions: "快捷操作",
     quickActionsDesc: "導覽、搜尋、提問、主題",
-    appName: "MXM Notebook",
+    appName: "MXM Cognos",
     add: "新增",
     remove: "移除",
     confirm: "確認",
@@ -191,7 +191,7 @@ export const zhTW = {
     localDevLabel: "對於本地開發",
   },
   auth: {
-    loginTitle: "MXM Notebook",
+    loginTitle: "MXM Cognos",
     loginDesc: "輸入密碼以存取應用程式",
     passwordPlaceholder: "密碼",
     signingIn: "正在登入...",
